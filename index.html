@@ -8,8 +8,8 @@
     <title>TECH I.S.Coworking|テックアイエスコワーキング</title>
 </head>
 <body>
-    <header>
-        <h1>TECH I.S.Coworking</h1>
+    <header class="header">
+        <h1><img src="img/logo.png" alt="ロゴ"></h1>
         <ul class="menu">
             <li class="menu-list">
                 見学・申し込みはこちらから
@@ -17,14 +17,14 @@
         </ul>
     </header>
     <main>
-        <section id="fronttopview">
+        <section id="frontview">
             <picture>
                 <source srcset="img/mobile-fv.png" alt="トップ画面" media="(max-width: 800px)">
                 <img src="img/fv.png" alt="トップ画面">
             </picture>
             <div class="frontview-txts">
-                <p class="rontview-txt-large">松山市駅から徒歩5分</p>
-                <h2>誰でも使えるコワーキング</h2>
+                <p class="frontview-txt-large">松山市駅から徒歩5分</p>
+                <h2>誰でも使える<br>コワーキング</h2>
                 <time class="time">10:00~22:00</time>
                 <p class="frontview-txt-small">当日のみの利用も月額利用もできます。</p>
             </div>
@@ -94,52 +94,69 @@
             <span>Price</span>
             <h3>料金</h3>
             <table class="price-table">
-                <tr>
-                    <th>月額会員</th>
+                <tr class="black">
+                    <th colspan="4">月額会員</th>
+                </tr>
+                <tr class="gray">
+                    <td colspan="2">オールデイ【終日 10:00〜22:00】</td>
+                    <td colspan="2">ナイト【平日 17:00〜22:00 土日 10:00〜22:00】</td>
                 </tr>
                 <tr>
-                    <th>オールデイ【終日 10:00〜22:00】</th>
-                    <th>ナイト【平日 17:00〜22:00 土日 10:00〜22:00】</th>
+                    <td class="blue">フルコース</td>
+                    <td class="blue">リミテッドコース</td>
+                    <td class="blue">フルコース</td>
+                    <td class="blue">リミテッドコース</td>
                 </tr>
                 <tr>
-                    <td>フルコース</td>
-                    <td>リミテッドコース</td>
-                    <td>フルコース</td>
-                    <td>リミテッドコース</td>
+                    <td class="blue">¥11,000（税込）/月</td>
+                    <td class="blue">¥9,000（税込）/月</td>
+                    <td class="blue">¥9,000（税込）/月</td>
+                    <td class="blue">7,000（税込）/月</td>
                 </tr>
                 <tr>
-                    <td>¥11,000（税込）/月</td>
-                    <td>¥9,000（税込）/月</td>
-                    <td>¥9,000（税込）/月</td>
-                    <td>7,000（税込）/月</td>
-                </tr>
-                <tr>
-                    <td>個室利用 可</td>
-                    <td>個室利用 不可</td>
-                    <td>個室利用 可</td>
-                    <td>個室利用 不可</td>
+                    <td class="blue">個室利用 可</td>
+                    <td class="blue">個室利用 不可</td>
+                    <td class="blue">個室利用 可</td>
+                    <td class="blue">個室利用 不可</td>
                 </tr>
             </table>
-            <table>
-                ドロップイン利用
-                2時間
-                ¥800（税込）
-                1日（2時間以上利用）
-                ¥2,400（税込）
-                ※ フリースペースのみ利用
+            <table class="price-table">
+                <tr class="black">
+                    <th colspan="2">ドロップイン利用</th>
+                </tr>
+                <tr class="gray">
+                    <td>2時間</td>
+                    <td>1日（2時間以上利用）</td>
+                </tr>
+                <tr class="blue">
+                    <td>¥800（税込）</td>
+                    <td>¥2,400（税込）</td>
+                </tr>
+                <tr class="blue">
+                    <td colspan="2">※ フリースペースのみ利用</td>
+                </tr>
+
             </table>
             <p>
                 ※月額会員の申し込みは、入会金としてICカード１枚につき3,300円（税込）の事務手数料が発生します。<br>
                 ※オンラインルームは、月額会員さまの利用希望が多いため、単発利用（ドロップイン）でのご利用はできません。<br>
                 ※法人契約をご希望の方は、見学申し込みからお問い合わせください。
             </p>
-            <table>
-                月額会員(※1)
-                クレジットカード・口座振替（前払い）
+            <table class="price-table">
+                <tr class="black">
+                    <th>月額会員(※1)</th>
+                </tr>
+                <tr class="blue">
+                    <td>クレジットカード・口座振替（前払い）</td>
+                </tr>
             </table>
-            <table>
-                単発利用
-                現金・各種クレジットカード・QRコード決済など
+            <table class="price-table">
+                <tr class="black">
+                    <th>単発利用</th>
+                </tr>
+                <tr class="blue">
+                    <td>現金・各種クレジットカード・QRコード決済など</td>
+                </tr>
             </table>
             <p class="contact-form"><a href="#" target="_blank">見学申し込みはこちら</a></p>
         </section>
@@ -147,6 +164,7 @@
             <span>Map</span>
             <h3>住所</h3>
             <p>〒790-0012 愛媛県松山市湊町4丁目6番地12 池田ビル1階2階</p>
+            <img src="img/map.jpg" alt="地図">
         </section>
     </main>
     <footer class="footer">

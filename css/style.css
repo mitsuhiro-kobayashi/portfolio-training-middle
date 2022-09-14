@@ -14,7 +14,114 @@ a {
     text-decoration: none;
 }
 
-.price-table {
-    border: solid;
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+}
+
+/*
+header
+*/
+.header {
+    display:flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0;
+}
+
+.header img {
+    width: 200px;
+}
+
+.header ul li {
+    background-color: black;
+    color: white;
+    font-size: small;
+    padding: 15px 50px 15px 50px;
+}
+
+/*
+main
+*/
+
+#frontview {
+    display: flex;
+    width: 100%;
+}
+
+#frontview picture {
+    width: 70%;
+    display: inline-block;
+}
+
+#frontview picture img {
+    width: 100%;
+}
+
+.frontview-txts {
+    display: inline-block;
+    width: 30%;
+    background-color: #00ABAE;
+    color: white;
     text-align: center;
+    padding: 5%;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 2%;
+}
+
+.frontview-txt-large {
+    font-size: 35px;
+    margin: 0;
+}
+
+.frontview-txts time {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#price {
+    background-color: #E5F7F7;
+}
+
+.price-table {
+    width: 800px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: smaller;
+}
+
+.price-table th, td {
+    text-align: center;
+    padding: 1% 2% 1% 2%;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.gray td {
+    background-color: #C9C7C7;
+    font-weight: lighter;
+    border: solid 0.5px #E1ECEE;
+}
+
+.blue {
+    background-color: #E5F7F7;
+    border: solid 0.5px #C9C7B4;
+    font-weight: lighter;
+}
+
+
+@media screen and (max-width:767px) {
+
 }
