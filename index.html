@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>TECH I.S.Coworking|テックアイエスコワーキング</title>
 </head>
 <body>
@@ -17,39 +18,63 @@
     </header>
     <main>
         <section id="fronttopview">
-            <p>松山市駅から徒歩5分</p>
-            <h2>誰でも使えるコワーキング</h2>
-            <p>10:00~22:00</p>
-            <p>当日のみの利用も月額利用もできます。</p>
+            <picture>
+                <source srcset="img/mobile-fv.png" alt="トップ画面" media="(max-width: 800px)">
+                <img src="img/fv.png" alt="トップ画面">
+            </picture>
+            <div class="frontview-txts">
+                <p class="rontview-txt-large">松山市駅から徒歩5分</p>
+                <h2>誰でも使えるコワーキング</h2>
+                <time class="time">10:00~22:00</time>
+                <p class="frontview-txt-small">当日のみの利用も月額利用もできます。</p>
+            </div>
         </section>
-        <section id="fronttop">
-            <h3>誰でも使えるコワーキングで未来を作ろう</h3>
-            <p>テックアイエスコワーキングは松山市駅から徒歩５分で松山の中心、銀天街にあるコワーキングスペースです。愛媛で事業をされる方や起業される方の活動拠点となることで新たなイノベーションの起点となる空間を目指します。</p>
-            <p>あなたも愛媛の中心地でイノベーションを起こしませんか？</p>
+        <section id="about">
+            <div class="about-txts">
+                <h3>誰でも使えるコワーキング<br>で未来を作ろう</h3>
+                <p>テックアイエスコワーキングは松山市駅から徒歩５分で松山の中心、銀天街にあるコワーキングスペースです。愛媛で事業をされる方や起業される方の活動拠点となることで新たなイノベーションの起点となる空間を目指します。</p>
+                <p>あなたも愛媛の中心地でイノベーションを起こしませんか？</p>
+            </div>
+            <div class="about-img">
+                <img src="img/about.png" alt="1階スペース">
+            </div>
         </section>
         <section id="facility">
             <span>Facility</span>
             <h3>テックアイエスコワーキング 愛媛県</h3>
+            <ul class="facility-icons">
+                <li class="facility-icon"><img src="img/online.png" alt="online"></li>
+                <li class="facility-icon"><img src="img/drink.png" alt="drink"></li>
+                <li class="facility-icon"><img src="img/print.png" alt="print"></li>
+                <li class="facility-icon"><img src="img/room.png" alt="room"></li>
+                <li class="facility-icon"><img src="img/charge.png" alt="charge"></li>
+                <li class="facility-icon"><img src="img/wifi.png" alt="wifi"></li>
+                <li class="facility-icon"><img src="img/event.png" alt="space"></li>
+            </ul>
+            <div class="facility-map"><img src="img/space.png" alt="１階と２階の見取り図"></div>
         </section>
         <section id="feature">
             <span>Feature</span>
             <h3>各スペースの紹介</h3>
             <ul>
                 <li>
+                    <img src="img/open.png" alt="1階部分">
                     <h4>オープンスペース1F</h4>
                     <p>来客の方や利用者の方とリラックスして打ち合わせすることができるスペースです。</p>
                 </li>
                 <li>
+                    <img src="img/open2.png" alt="2階部分">
                     <h4>自主スペース1F/2F</h4>
                     <p>フリードリンク（アイス/ホット）でコーヒーを飲みながら、集中して作業することができるスペースです。</p>
                 </li>
                 <li>
+                    <img src="img/door.png" alt="個室">
                     <h4>オンラインルーム2F</h4>
                     <p>誰にも見られない空間で、集中してテレワークすることができるスペースです。</p>
                 </li>
             </ul>
-            <p>※会議室、イベントスペースの時間貸しもありますので、お問合せ下さい。</p>
-            <a>見学申し込みはこちら</a>
+            <p class="feature-txt">※会議室、イベントスペースの時間貸しもありますので、お問合せ下さい。</p>
+            <p class="contact-form"><a href="#" target="_blank">見学申し込みはこちら</a></p>
         </section>
         <section id="flow">
             <span>Flow</span>
@@ -68,22 +93,32 @@
         <section id="price">
             <span>Price</span>
             <h3>料金</h3>
-            <table>
-                月額会員
-                オールデイ【終日 10:00〜22:00】
-                フルコース
-                ¥11,000（税込）/月
-                個室利用 可
-                リミテッドコース
-                ¥9,000（税込）/月
-                個室利用 不可
-                ナイト【平日 17:00〜22:00 土日 10:00〜22:00】
-                フルコース
-                ¥9,000（税込）/月
-                個室利用 可
-                リミテッドコース
-                7,000（税込）/月
-                個室利用 不可
+            <table class="price-table">
+                <tr>
+                    <th>月額会員</th>
+                </tr>
+                <tr>
+                    <th>オールデイ【終日 10:00〜22:00】</th>
+                    <th>ナイト【平日 17:00〜22:00 土日 10:00〜22:00】</th>
+                </tr>
+                <tr>
+                    <td>フルコース</td>
+                    <td>リミテッドコース</td>
+                    <td>フルコース</td>
+                    <td>リミテッドコース</td>
+                </tr>
+                <tr>
+                    <td>¥11,000（税込）/月</td>
+                    <td>¥9,000（税込）/月</td>
+                    <td>¥9,000（税込）/月</td>
+                    <td>7,000（税込）/月</td>
+                </tr>
+                <tr>
+                    <td>個室利用 可</td>
+                    <td>個室利用 不可</td>
+                    <td>個室利用 可</td>
+                    <td>個室利用 不可</td>
+                </tr>
             </table>
             <table>
                 ドロップイン利用
@@ -106,7 +141,7 @@
                 単発利用
                 現金・各種クレジットカード・QRコード決済など
             </table>
-            <a>見学申し込みはこちら</a>
+            <p class="contact-form"><a href="#" target="_blank">見学申し込みはこちら</a></p>
         </section>
         <section id="map">
             <span>Map</span>
