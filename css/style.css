@@ -48,6 +48,20 @@ h1 {
     padding: 15px 50px 15px 50px;
 }
 
+
+/*
+insta
+*/
+.front-insta {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+.front-insta img {
+    width: 50px;
+    height: 50px;
+}
+
 /*
 frontview
 */
@@ -236,6 +250,10 @@ flow
 /*
 price
 */
+.price-table-sp {
+    display: none;
+}
+
 #price {
     background-color: #E5F7F7;
     padding: 8% 20%;
@@ -306,5 +324,138 @@ price
 }
 
 @media screen and (max-width:767px) {
+    .menu {
+        display: none;
+    }
+    .header {
+        display: block;
+    }
+    h1 {
+        text-align: center;
+    }
+    .header img {
+        margin: 3% 0;
+        width: auto;
+    }
+    #frontview picture {
+        width: 50%;
+    }
+    .frontview-txts {
+        width: 50%;
+    }
+    .frontview-txt {
+        position: absolute;
+        top:5%;
+        left: 5%;
+    }
+    .frontview-txt-large {
+        font-size: calc(100vw / 30);
+    }
+    h2 {
+        font-size: calc(100vw / 20);
+    }
+    .frontview-txt-small {
+        font-size: calc(100vw / 50);
+    }
+    #about {
+        display: block;
+        margin: 10% 10%;
+    }
+    .about-txts h3 {
+        font-size: calc(100vw / 20);
+    }
+    .about-img {
+        display: none;
+    }
+    .facility-icon img {
+        width: 100%;
+    }
+    .facility-icons {
+        padding: 0;
+        margin: 5% 1%;
+    }
+    .facility-map img {
+        width: 100%;
+    }
+    #feature ul {
+        display: block;
+        padding: 0;
+    }
+    #feature {
+        margin: 10% 2%;
+    }
+    #feature ul li {
+        width: 100%;
 
+    }
+    .feature-txt {
+        text-align: left;
+    }
+    .common-btn a {
+        padding: 3% 5%;
+        font-size: smaller;
+    }
+    #flow ul {
+        display: block;
+        padding: 0;
+    }
+    #flow {
+        margin: 10% 2%;
+        text-align: left;
+    }
+    #flow ul li h4 {
+        text-align: center;
+    }
+    #price {
+        padding: 8% 2%;
+    }
+
+    .price-table {
+        display: none;
+    }
+
+    .price-table-sp {
+        display: block;
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        font-size: smaller;
+        margin: 10% auto;
+    }
+    
+    .price-table-sp th, td {
+        text-align: center;
+        padding: 2% 0;
+        width: 30%;
+    }
+    
+    .black-sp {
+        background-color: black;
+        color: white;
+    }
+    
+    .gray-sp th, td {
+        background-color: #C9C7C7;
+        font-weight: lighter;
+        border: solid 0.5px #E1ECEE;
+    }
+    
+    .blue-sp {
+        background-color: #E5F7F7;
+        border: solid 0.5px #C9C7B4;
+        font-weight: lighter;
+    }
+    
+    .blue-sp td {
+        border: solid 0.5px #C9C7B4;
+        background-color: #E5F7F7;
+    }
+    
+    .price-txt {
+        font-size: small;
+    } 
+    #map {
+        padding: 8% 2%;
+    }
+    
 }
